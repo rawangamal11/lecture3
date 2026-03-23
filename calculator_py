@@ -1,0 +1,21 @@
+# Simple Calculator (Add & Subtract)
+
+# take input from user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+# choose operation
+operation = input("Enter operation (+ or -): ")
+
+# perform calculation
+if operation == "+":
+    result = num1 + num2
+elif operation == "-":
+    result = num1 - num2
+else:
+    print("Invalid operation!")
+    result = None
+
+# print result
+if result is not None:
+    print("Result =", result)
